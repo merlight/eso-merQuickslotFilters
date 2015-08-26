@@ -51,7 +51,9 @@ local function onAddOnLoaded(event, addOnName)
     end
 
     local function qsShouldAddItemToList(self, itemData)
-        if not zorgShouldAddItemToList(self, itemData) then
+        if not zorgShouldAddItemToList(self, itemData) or
+           not itemData.meetsUsageRequirement or
+           IsItemJunk(itemData.bagId, itemData.slotIndex) then
             return false
         end
 
