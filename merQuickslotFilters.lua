@@ -113,9 +113,9 @@ local function onAddOnLoaded(event, addOnName)
         "EsoUI/Art/Inventory/inventory_tabIcon_weapons_over.dds")
 
     qsInsertItemTypeFilter(QUICKSLOT_WINDOW, nil, {ITEMTYPE_AVA_REPAIR},
-        "EsoUI/Art/Inventory/inventory_tabIcon_crafting_up.dds",
-        "EsoUI/Art/Inventory/inventory_tabIcon_crafting_down.dds",
-        "EsoUI/Art/Inventory/inventory_tabIcon_crafting_over.dds")
+        "EsoUI/Art/Vendor/vendor_tabIcon_repair_up.dds",
+        "EsoUI/Art/Vendor/vendor_tabIcon_repair_down.dds",
+        "EsoUI/Art/Vendor/vendor_tabIcon_repair_over.dds")
 
     qsInsertItemTypeFilter(QUICKSLOT_WINDOW,
         GetString("SI_ITEMFILTERTYPE", ITEMFILTERTYPE_CONSUMABLE),
